@@ -1,0 +1,20 @@
+
+    <div class="log-form">
+        <form class="log-form-fl" [formGroup]="userForms" (ngSubmit)="checkCredentials()">
+            <div class="lf-div"><label>Login</label></div>
+        
+            <div class="lf-div">
+                <i class="fa-solid fa-user"></i> <input formControlName="username"  type="text" placeholder="Username">
+            </div>
+           
+
+            <div class="lf-div">
+                <i class="fa-solid fa-key"></i> <input formControlName="password"  type="text" placeholder="Password">
+            </div>
+
+            <div class="lf-div">
+                <input type="submit" class="btn">
+            </div>
+        </form>
+     
+    </div>

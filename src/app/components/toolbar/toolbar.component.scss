@@ -1,0 +1,27 @@
+.toolbar{
+    display: flex;
+    justify-content: space-around;
+    
+    background-color:var(--aqua-1);
+    color: var(--white-1);
+    
+}
+
+.toolbar div{
+    padding: 10px;
+    flex: 1;
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid var(--aqua-2);
+    border-left: 1px solid var(--aqua-2);
+}
+
+.toolbar div:hover{
+   background-color: var(--aqua-2);
+   border-right: 1px solid var(--aqua-1);
+   border-left: 1px solid var(--aqua-1);
+}
+
+.toolbar div i:hover{
+   
+}

@@ -1,0 +1,45 @@
+.login{
+     min-height: 100vh;
+    display: flex;
+    background-color: white;
+    width: 100%;
+   
+  
+}
+
+.login-form-cont{
+    min-width: 30vw;
+    padding:20px ;
+}
+
+.login-img{
+    flex:1;
+ background-color: rgb(133, 133, 133);   
+  background-image: url("../../../assets/img/bg1.jpg");
+  background-size: cover;
+ 
+ 
+}
+
+
+@media (max-width:500px){
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-img{
+        background-image: none;
+        height: 5px;
+        flex: none;
+        background-color: var(--yellow-1);
+    }
+
+    .login-form-cont{
+      
+        order: 2;
+    }
+
+}

@@ -1,0 +1,43 @@
+.panel{
+    background-color: white;
+    height: 100%;
+}
+
+.tabla-alums{
+    width: 100%;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.tabla-alums tr th{
+   background-color: var(--blue-1);
+    width: 50vw;
+    color: var(--white-1);
+}
+
+.tabla-alums tr th,.tabla-alums tr td{
+box-sizing: content-box;
+ padding: 10px;
+}
+
+.tabla-alums tr td{
+    border-bottom: 2px var(--white-3) solid;
+    text-align: center;
+}
+
+.tabla-alums-acc{
+    margin:  0 10%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-m{
+    padding: 0.5rem;
+    background-color: var(--aqua-2);
+}
+
+.scroll{
+    max-height: 70vh;
+    overflow-y: scroll;
+    margin-bottom: 10%;
+}

@@ -1,0 +1,101 @@
+<div class="manager">
+    <div class="manager-opt">
+        <h3>Crear un usuario nuevo</h3>
+    </div>
+   
+    
+    <div id="Form1" class="form1 hidden ">
+        <div class="txt-c child">
+            <h5>Nombre usuario</h5>
+            <input type="text">
+        </div>
+    
+        <div class="txt-c child">
+            <h5>Contraseña</h5>
+            <input type="text">
+        </div>
+    
+        <div class="txt-c child">
+            <h5>Tipo de usuario</h5>
+            <select id="selectType">
+                <option>Profesor</option>
+                <option>Padre</option>
+                <option>Administrativo</option>
+               
+            </select>
+        </div>
+        <br>
+        <div >
+            <button  style="width: 100%;" class="btn" (click)="avanzaFormulario()">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- SE ACTIVA SI SE ELIGE EL PROFESOR -->
+    <div id="FormProfesor" class="hidden ">
+        <div class="txt-c child">
+            <h5>Nombre del profesor</h5>
+            <input type="text">
+        </div>
+    
+        <div class="txt-c child">   
+            <h5>Apellido(s)</h5>
+            <input type="text">
+        </div>
+    
+       
+        <br>
+        <div >
+            <button  style="width: 100%;" class="btn" >Registrar</button>
+        </div>
+    </div>
+
+        <!-- SE ACTIVA SI SE ELIGE EL PADRE -->
+
+
+    <div id="FormPadre" class="hidden ">
+        <div class="txt-c child">
+            <h4>Datos de la familia</h4>
+            <p>Por favor prorporcione los siguientes datos:</p>
+            <input  style="margin-top: 10px;" type="number" placeholder="Hijo(s) a matricular">
+            
+         
+        </div>
+
+        <br>
+       
+       
+    
+    </div>
+
+        <!-- SE ACTIVA SI SE ELIGE EL ADMINISTRADOR -->
+
+
+    <div id="FormAdministrador" class="hidden ">
+        <div class="txt-c child">
+            <h5>ADMINISTRADOR</h5>
+            <input type="text">
+        </div>
+    
+        <div class="txt-c child">
+            <h5>Contraseña</h5>
+            <input type="text">
+        </div>
+    
+        <div class="txt-c child">
+            <h5>Tipo de usuario</h5>
+            <select id="selectType">
+                <option>Profesor</option>
+                <option>Padre</option>
+                <option>Administrativo</option>
+               
+            </select>
+        </div>
+        <br>
+       
+       
+    
+    </div>
+    
+    
+    
+</div>

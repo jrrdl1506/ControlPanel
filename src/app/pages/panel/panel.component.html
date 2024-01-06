@@ -1,0 +1,57 @@
+
+<div class="panel">
+    
+    <!-- SI EL USUARIO ES UN PROFESOR -->
+    <div *ngIf="tipoUsuario === 'Profesor' ">
+        <app-toolbar></app-toolbar>
+    <div class="txt-c txt-white-1 title-m">
+        <h3>Lista de alumnos</h3>
+    </div>
+        <div  class="scroll">
+            <table class="tabla-alums">
+         
+                <thead>
+                  <tr>
+                    <th scope="col">Alumno</th>
+                    <th scope="col">Accion</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+    
+                  <tr >
+                    <td >Carlos Villalobos</td>
+                    
+                    <td >
+                        <div class="tabla-alums-acc txt-gray-2">
+                            <i class="fa-solid fa-clipboard-list "></i>
+                            <i class="fa-solid fa-file-waveform "></i>
+                            <i class="fa-solid fa-comments "></i>
+                        </div>
+                    </td>
+                   
+                  </tr>
+    
+                 
+                </tbody>
+              </table>
+        </div>
+       
+    </div>
+
+    <!-- SI EL USUARIO ES UN PADRE -->
+    <div *ngIf="tipoUsuario === 'Padre'">
+        <app-toolbar></app-toolbar>
+    </div>
+
+    <!-- SI EL USUARIO ES UN ADMINISTRATIVO -->
+    <div *ngIf="tipoUsuario === 'Administrativo'">
+        <app-toolbar></app-toolbar>
+    </div>
+
+     <!-- SI ES EL ADMIN -->
+     <div *ngIf="tipoUsuario === 'Admin'">
+        <app-toolbar></app-toolbar>
+    </div>
+
+</div>
