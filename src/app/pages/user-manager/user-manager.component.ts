@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-manager',
@@ -8,7 +10,7 @@ import { Component } from '@angular/core';
 export class UserManagerComponent {
 
 
-    constructor(){
+    constructor(private router:Router){
 
     }
 
@@ -32,6 +34,7 @@ export class UserManagerComponent {
       
     }
 
+    // ACTIVA EL FORMULARIO DEPENDIENDO DE LA OPCION QUE HAYAS SELECCIONADO
     activarFormulario(idForm:string = "Form1"){
       var form = document.getElementById(idForm);
       if(form){
@@ -40,6 +43,7 @@ export class UserManagerComponent {
     }
 
 
+    //DDETERMINA LA OPCION ELEGIDA EN EL SELECT
     determinarProxFormulario(usuarioTipo:string):string{
       var idFormulario = "Form1";
       switch(usuarioTipo){
@@ -60,4 +64,30 @@ export class UserManagerComponent {
 
       return idFormulario;
     }
+
+    continuarAlRegistro(){
+      var inputHijos=document.getElementById('numHijos') as HTMLInputElement ;
+      if(inputHijos ){
+        var valorInputHijos = inputHijos.value;  
+        console.log(valorInputHijos);
+        Swal.fire({
+          title: 'Cuenta creada',
+          text: 'Seras redirigido a la pagina de registro',
+          icon: 'success',
+          showCancelButton: true,
+          confirmButtonText: 'Aceptar',
+          
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Navegar a la página deseada
+            this.router.navigate(['/stdRegistry',valorInputHijos]);
+          }
+        });
+      }
+      
+       
+    
+    }
+
+
 }

@@ -51,6 +51,28 @@ body{
   display: block;
 }
 
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-sa{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-sb{
+  display: flex;
+  justify-content: space-between;
+}
+
 // CLASES PARA BOTONES
 
 .btn{
@@ -75,6 +97,53 @@ body{
     min-width: 130px;
     cursor: pointer;
 }
+
+.btn-aqua{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  border: none;
+  background-color: var(--aqua-2);
+
+  // border: 1px solid var(--maroon-2);
+  min-width: 130px;
+  padding: 5px;
+}
+
+btn-aqua:hover{
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-color: var(--aqua-3);
+  
+  border: 1px solid var(--aqua-1);
+  min-width: 130px;
+  cursor: pointer;
+}
+
+btn-disable{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  border: none;
+  background-color: var(--gray-1);
+
+  // border: 1px solid var(--maroon-2);
+  min-width: 130px;
+  padding: 5px;
+}
+
+btn-disable:hover{
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-color: var(--gray-2);
+  
+  border: 1px solid var(--gray-1);
+  min-width: 130px;
+  cursor: pointer;
+}
+
+
+
 
 .btn-blue-1{
   
@@ -103,9 +172,11 @@ h1,h2,h3,h4,h5,p{
 
 }
 
-.txt-c{
+  .txt-c{
     text-align: center;
-}
+  }
+
+
   .txt-green{
     color:var(--green-1);
     

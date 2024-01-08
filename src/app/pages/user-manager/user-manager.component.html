@@ -49,16 +49,19 @@
         </div>
     </div>
 
-        <!-- SE ACTIVA SI SE ELIGE EL PADRE -->
+    <!-- SE ACTIVA SI SE ELIGE EL PADRE -->
 
 
     <div id="FormPadre" class="hidden ">
         <div class="txt-c child">
             <h4>Datos de la familia</h4>
             <p>Por favor prorporcione los siguientes datos:</p>
-            <input  style="margin-top: 10px;" type="number" placeholder="Hijo(s) a matricular">
             
-         
+            <input  id="numHijos" style="margin-top: 10px;" type="number" placeholder="Hijo(s) a matricular">
+            <br><br>
+            <div >
+                <button  style="width: 100%;" class="btn" (click)="continuarAlRegistro()">Aceptar y continuar al registro</button>
+            </div>
         </div>
 
         <br>

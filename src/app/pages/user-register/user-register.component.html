@@ -1,0 +1,57 @@
+
+<div>
+    <br><br>
+    <div class="txt-c">
+        <h2>Registar un alumno</h2>
+    </div>
+
+    <form [formGroup]="formulario">
+        <div class="flex-col mg">
+          <h4>Nombre</h4>
+          <input type="text" formControlName="nombre">
+        </div>
+      
+        <div class="flex-col mg">
+          <h4>Apellido Paterno</h4>
+          <input type="text" formControlName="apellido_paterno">
+        </div>
+      
+        <div class="flex-col mg">
+          <h4>Apellido Materno</h4>
+          <input type="text" formControlName="apellido_materno">
+        </div>
+      
+        <div class="flex-col mg">
+          <h4>Edad</h4>
+          <input type="text" formControlName="edad">
+        </div>
+      
+        <div class="flex-col mg">
+          <h4>Grado</h4>
+          <input type="text" formControlName="grado">
+        </div>
+      
+        <div class="flex-col mg">
+          <h4>Grupo</h4>
+          <input type="text" formControlName="grupo">
+        </div>
+      
+        <div class="flex-col">
+          <h4>Foto</h4>
+          <input type="file" formControlName="foto">
+        </div>
+      
+      <br>
+      
+        <div class="flex-c mg">
+          <button id="btnCapturar" class="btn-aqua" type="submit" (click)="enviar()" >Capturar</button>
+        </div>
+        <div class="flex-c mg">
+            <button id="btnGuardar" class="btn hidden"  (click)="postArrayAlumnos()">Guardar</button>
+          </div>
+      </form>
+      
+  
+    
+
+</div>

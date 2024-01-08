@@ -1,0 +1,21 @@
+.mg{
+    margin: 20px 0;
+}
+
+.mg input{
+    margin-top: 5px;
+    padding: 1px;
+    width: 60%;
+   border: none;
+    border-bottom:2px solid var(--gray-2);
+    transition: all ease 0.3s;
+    
+}
+
+.mg input:focus{
+   
+    outline: none;
+  
+    border-bottom:3px solid var(--aqua-1);
+}
+

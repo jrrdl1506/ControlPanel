@@ -11,6 +11,9 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { UserManagerComponent } from './pages/user-manager/user-manager.component';
+import { UserRegisterComponent } from './pages/user-register/user-register.component';
+import { ScholarFormComponent } from './components/scholar-form/scholar-form.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { UserManagerComponent } from './pages/user-manager/user-manager.componen
     PanelComponent,
     LoginFormComponent,
     ToolbarComponent,
-    UserManagerComponent
+    UserManagerComponent,
+    UserRegisterComponent,
+    ScholarFormComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
