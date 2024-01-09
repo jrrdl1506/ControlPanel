@@ -1,0 +1,84 @@
+<form [formGroup]="expedienteForm" (ngSubmit)="onSubmit()">
+    <h3 class="formulario txt-c">Expediente Médico</h3>
+  
+    <div class="child flex-col">
+      <p>Nombre</p>
+      <input type="text" formControlName="nombre">
+    </div>
+  
+    <div class="child flex-row">
+      <div class="flex-col">
+        <p>Apellido Pat.</p>
+        <input type="text" formControlName="apellidoPat">
+      </div>
+  
+      <div class="flex-col">
+        <p>Apellido Mat.</p>
+        <input type="text" formControlName="apellidoMat">
+      </div>
+    </div>
+  
+    <div class="child flex-row">
+      <div class="flex-col">
+        <p>Edad</p>
+        <input type="text" formControlName="edad">
+      </div>
+  
+      <div class="flex-col">
+        <p>Peso</p>
+        <input type="text" formControlName="peso">
+      </div>
+  
+      <div class="flex-col">
+        <p>Altura</p>
+        <input type="text" formControlName="altura">
+      </div>
+    </div>
+  
+    <div class="child flex-row">
+      <div class="flex-col">
+        <p>Sexo</p>
+        <select formControlName="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+      </div>
+  
+      <div class="flex-col">
+        <p>Fecha Expediente</p>
+        <input type="date" formControlName="fechaExpediente">
+      </div>
+    </div>
+  
+    <div class="child flex-row">
+      <div class="flex-col">
+        <p>Dirección</p>
+        <input type="text" formControlName="direccion">
+      </div>
+  
+      <div class="flex-col">
+        <p>Teléfono</p>
+        <input type="text" formControlName="telefono">
+      </div>
+    </div>
+  
+    <div class="child flex-col">
+      <p>Historial médico</p>
+      <textarea formControlName="historialMedico"></textarea>
+    </div>
+  
+    <div class="child flex-col">
+      <p>¿Necesita tomar algún medicamento?</p>
+      <textarea formControlName="medicamento"></textarea>
+    </div>
+  
+    <div class="child flex-col">
+      <p>¿Es alérgico a alguna sustancia?</p>
+      <textarea formControlName="alergico"></textarea>
+    </div>
+  
+    <div class="child flex-c">
+      <button type="submit" class="btn-aqua">Capturar</button>
+    </div>
+  </form>
+  

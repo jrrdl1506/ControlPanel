@@ -1,0 +1,28 @@
+.formulario{
+    width: 100%;
+}
+
+.flex-col input{
+    width: 80%;
+}
+
+textarea{
+    width: 80%;
+    height: 140px;
+}
+
+.child{
+        margin: 20px 0;
+
+}
+
+textarea,input{
+    border: none;
+    outline: none;
+    background-color: var(--white-2);
+    padding: 5px;
+}
+
+input{
+ 
+}

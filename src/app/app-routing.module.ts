@@ -6,6 +6,10 @@ import { UserManagerComponent } from './pages/user-manager/user-manager.componen
 import { User } from './models/User';
 import { UserRegisterComponent } from './pages/user-register/user-register.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { StudentReportComponent } from './pages/student-report/student-report.component';
+import { MedicalReportComponent } from './pages/medical-report/medical-report.component';
+import { UserModifyComponent } from './pages/user-modify/user-modify.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:'/login',pathMatch:'full'},
@@ -13,7 +17,10 @@ const routes: Routes = [
   {path:'panel',component:PanelComponent},
   {path:'manager',component:UserManagerComponent},
   {path:'stdRegistry/:numRegistros',component:UserRegisterComponent},
-  {path:'chat',component:ChatComponent}
+  {path:'chat',component:ChatComponent},
+  {path:'stdReport',component:StudentReportComponent},
+  {path:'mdReport',component:MedicalReportComponent},
+  {path:'editUser',component:UserModifyComponent}
 
 ];
 

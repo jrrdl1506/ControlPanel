@@ -14,6 +14,9 @@ import { UserManagerComponent } from './pages/user-manager/user-manager.componen
 import { UserRegisterComponent } from './pages/user-register/user-register.component';
 import { ScholarFormComponent } from './components/scholar-form/scholar-form.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { StudentReportComponent } from './pages/student-report/student-report.component';
+import { MedicalReportComponent } from './pages/medical-report/medical-report.component';
+import { UserModifyComponent } from './pages/user-modify/user-modify.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ChatComponent } from './pages/chat/chat.component';
     UserManagerComponent,
     UserRegisterComponent,
     ScholarFormComponent,
-    ChatComponent
+    ChatComponent,
+    StudentReportComponent,
+    MedicalReportComponent,
+    UserModifyComponent
   ],
   imports: [
     BrowserModule,

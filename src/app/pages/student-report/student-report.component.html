@@ -1,0 +1,30 @@
+
+
+<div class="">
+    <div class="title txt-c">
+        <h3>Generar reporte de desempeño</h3>
+    </div>
+
+    <form [formGroup]="reportForm" class="report-form" (ngSubmit)="onSubmit()">
+
+        <div class="field f2 flex-col">
+          <h4>Asunto</h4>
+          <input type="text" formControlName="asunto">
+        </div>
+    
+        <div class="field flex-c ta-msg">
+          <textarea class="ta" formControlName="mensaje"></textarea>
+        </div>
+    
+        <div class="field f3 flex-col">
+          <h4>Fecha</h4>
+          <input type="date" formControlName="fecha">
+        </div>
+    
+        <div class="flex-c">
+          <button type="submit" class="btn-aqua">Guardar</button>
+        </div>
+    
+      </form>
+
+</div>

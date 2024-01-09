@@ -6,6 +6,7 @@
 :root{
     --blue-1:#61A3BA;
     --blue-2: #22668D;
+    --blue-3:#75a8ba;
    
 
     --white-1:white;
@@ -19,6 +20,7 @@
     --aqua-1:rgb(53, 208, 177);
     --aqua-2:rgb(50, 186, 159);
     --aqua-3:rgb(59, 222, 189);
+    --aqua-4:rgb(123, 214, 196);
 
     --green-1:#B1C381;
     --yellow-1:#fcd386;
@@ -167,7 +169,7 @@ btn-disable:hover{
 
 //   CLASES PARA TEXTOS
 
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,p,textarea{
     font-family: 'Raleway', sans-serif !important; /* Reemplaza 'TuFuente' con el nombre de la fuente que desees utilizar */
 
 }
@@ -223,5 +225,12 @@ h1,h2,h3,h4,h5,p{
   }
 
 
+
+  textarea,input{
+    border: none;
+    outline: none;
+    background-color: var(--white-2);
+    padding: 5px;
+  }
 
 

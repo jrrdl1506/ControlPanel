@@ -1,8 +1,28 @@
-<div class="chat flex-col">
-    <div class="teacher-msg">
-a
+<div class="cent txt-c">
+    <h3>Mensajes</h3>
+</div>
+<div id="chatMsgs" lass="chat ">
+    
+    <div class="msg right">
+       <div class="parent-msg">
+            <div>
+                <p><strong>Maestro: </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, consequatur.</p>
+            </div>
+       </div>
     </div>
-    <div class="parent-msg">
-b
-    </div>
+    <div class="msg left">
+        <div class="teacher-msg">
+            <p><strong>Maestro: </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, consequatur.</p>
+        </div>
+     </div>
+     <div class="text-area">
+        <div class="ta-msg">
+            <textarea id="txtMsg" class="ta-text"></textarea>
+        </div>
+        <div class="send">
+            <i (click)="responder()" class="fa-solid fa-paper-plane"></i>
+        </div>
+     </div>
+     
+    
 </div>
