@@ -17,6 +17,10 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { StudentReportComponent } from './pages/student-report/student-report.component';
 import { MedicalReportComponent } from './pages/medical-report/medical-report.component';
 import { UserModifyComponent } from './pages/user-modify/user-modify.component';
+import { BulletinBoardComponent } from './pages/bulletin-board/bulletin-board.component';
+import { BulletinReportComponent } from './components/bulletin-report/bulletin-report.component';
+import { ViewReportComponent } from './pages/view-report/view-report.component';
+import { ReportListComponent } from './pages/report-list/report-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,11 @@ import { UserModifyComponent } from './pages/user-modify/user-modify.component';
     ChatComponent,
     StudentReportComponent,
     MedicalReportComponent,
-    UserModifyComponent
+    UserModifyComponent,
+    BulletinBoardComponent,
+    BulletinReportComponent,
+    ViewReportComponent,
+    ReportListComponent
   ],
   imports: [
     BrowserModule,

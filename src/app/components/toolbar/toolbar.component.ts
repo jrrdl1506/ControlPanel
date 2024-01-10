@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 import Swal from 'sweetalert2';
 @Component({
@@ -8,6 +9,12 @@ import Swal from 'sweetalert2';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
+
+
+  constructor(private router:Router){
+    
+
+  }
 
   searchUser(){
     Swal.fire({
@@ -66,5 +73,65 @@ export class ToolbarComponent {
     });
     
   }
+
+
+  modUser(){
+    Swal.fire({
+      title: 'Editar alumno',
+      input: 'text',
+      inputLabel: 'Nombre del alumno',
+      showCancelButton: true,
+      confirmButtonText: 'Aceptar',
+      confirmButtonColor:'#61A3BA',
+      cancelButtonText: 'Cancelar',
+      cancelButtonColor:'#22668D',
+      inputValidator: (value) => {
+        if (!value) {
+          return '¡Debes ingresar un texto!';
+        }
+        return null;
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Aquí puedes hacer algo con el valor ingresado, por ejemplo, mostrarlo en la consola
+        console.log('Texto ingresado:', result.value);
+        this.router.navigate(['/editUser']);
+      }
+    });
+  }
+
+
+  
+
+  deleteUser(){
+    Swal.fire({
+      title: 'Editar alumno',
+      input: 'text',
+      inputLabel: 'Nombre del alumno',
+      showCancelButton: true,
+      confirmButtonText: 'Aceptar',
+      confirmButtonColor:'#61A3BA',
+      cancelButtonText: 'Cancelar',
+      cancelButtonColor:'#22668D',
+      inputValidator: (value) => {
+        if (!value) {
+          return '¡Debes ingresar un texto!';
+        }
+        return null;
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Aquí puedes hacer algo con el valor ingresado, por ejemplo, mostrarlo en la consola
+        console.log('Texto ingresado:', result.value);
+        this.router.navigate(['/editeUser']);
+      }
+    });
+  }
+
+
+
+
+
+
 
 }

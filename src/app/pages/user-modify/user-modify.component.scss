@@ -1,0 +1,48 @@
+.photo-bg{
+    width: 100%;
+    height: 10vh;
+    
+    background: rgb(65,156,142);
+    background: linear-gradient(33deg, rgba(65,156,142,1) 0%, rgba(17,204,174,1) 47%, rgba(0,255,214,1) 100%);
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+}
+
+
+
+.fotoAlumno {
+    background-image: url("../../../assets/img/default.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor circular */
+}
+
+.img-cont {
+    margin-bottom: -30px;
+    width: 4rem;
+    height: 4rem;
+   
+    border-radius: 50%;
+   border: 4px solid var(--white-2);
+}
+
+form{
+    margin-top: 30px;
+
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: var(--white-2);
+}
+
+.icons{
+    margin:auto;
+    width: 40vw;
+    font-size: 20px;
+    color: var(--gray-1);
+}

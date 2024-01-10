@@ -9,6 +9,8 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { StudentReportComponent } from './pages/student-report/student-report.component';
 import { MedicalReportComponent } from './pages/medical-report/medical-report.component';
 import { UserModifyComponent } from './pages/user-modify/user-modify.component';
+import { BulletinBoardComponent } from './pages/bulletin-board/bulletin-board.component';
+import { ViewReportComponent } from './pages/view-report/view-report.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,9 @@ const routes: Routes = [
   {path:'chat',component:ChatComponent},
   {path:'stdReport',component:StudentReportComponent},
   {path:'mdReport',component:MedicalReportComponent},
-  {path:'editUser',component:UserModifyComponent}
+  {path:'editUser',component:UserModifyComponent},
+  {path:'bulletinBoard',component:BulletinBoardComponent},
+  {path:'viewReport',component:ViewReportComponent}
 
 ];
 

@@ -1,0 +1,28 @@
+.informe{
+
+    padding:10px;
+    
+    
+    background-color: var(--white-2);
+    border-bottom: 1px var(--white-3) solid;
+    transition: all ease 0.5;
+ 
+  
+    
+
+}
+
+.informe:hover{
+    background-color: var(--white-3);
+    border-bottom: 1px var(--white-2) solid;
+    cursor: pointer;
+}
+
+
+.subtitle{
+    overflow: hidden;         /* Oculta el contenido que sobresale */
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+    max-height: 30px;
+    font-family: 'Raleway', sans-serif;
+}
