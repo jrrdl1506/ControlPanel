@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-user-modify',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-modify.component.scss']
 })
 export class UserModifyComponent {
+
+  constructor(private router:Router){
+
+  }
+
+  reportList(reporte:string){
+    this.router.navigate(["/reportList/"+reporte]);
+  }
 
 }

@@ -1,0 +1,30 @@
+.expediente{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:var(--white-2);
+
+}
+
+.date{
+    width: 100%;
+ 
+}
+
+p{
+    font-size: 12px;
+}
+
+strong{
+    color: var(--black-1);
+}
+
+textarea{
+ background-color: var(--white-3);
+ width: 100%;
+ font-size:10px ;
+ height: 5rem;
+}
+
+
+

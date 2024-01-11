@@ -1,10 +1,10 @@
 .informe{
 
     padding:10px;
-    font-size: 12px;
+    
     
     background-color: var(--white-2);
-    border-bottom: 1px var(--white-3) solid;
+    border-bottom: 1px var(--gray-2) solid;
     transition: all ease 0.5;
  
   
@@ -14,7 +14,7 @@
 
 .informe:hover{
     background-color: var(--white-3);
-    border-bottom: 1px var(--white-2) solid;
+    border-bottom: 1px var(--gray-2) solid;
     cursor: pointer;
 }
 
@@ -25,4 +25,12 @@
     white-space: nowrap;    
     max-height: 30px;
     font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+.titles{
+    display: flex;
+    justify-content: space-between;
 }

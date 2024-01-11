@@ -1,1 +1,21 @@
-<p>report-list works!</p>
+<div class="txt-c p-2" >
+    <h3 *ngIf="mostrarExp;">Expedientes Medicos</h3>
+    <h3 *ngIf="!mostrarExp;">Reportes de desempeño</h3>
+</div>
+
+<div >
+    <div class="reportContainer  " *ngIf="mostrarExp;">
+            <app-report [tipo]="reporte"></app-report>
+
+    </div>
+
+    <div class="reportContainer  "*ngIf="!mostrarExp;  ">
+            <app-report [tipo]="reporte"></app-report>
+      
+    </div>
+
+
+
+    
+    
+</div>

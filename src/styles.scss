@@ -28,6 +28,8 @@
     --maroon-1:#B2533E;
     --maroon-2:#834030;
 
+    --black-1:rgb(65, 65, 65);
+
 
 }
 
@@ -236,6 +238,18 @@ h1,h2,h3,h4,h5,p,textarea{
 
   // Margenes
 
+  .m-1{
+    margin: 10px;
+  }
+
+  .m-2{
+    margin:20px;
+  }
+
+  .m-3{
+    margin:30px;
+  }
+
  .mt-1{
     margin-top: 10px;
   }
@@ -249,4 +263,12 @@ h1,h2,h3,h4,h5,p,textarea{
 
   .p-1{
     padding: 10px;
+  }
+
+  .p-2{
+    padding: 20px;
+  }
+
+  .p-3{
+    padding: 30px;
   }

@@ -21,6 +21,10 @@ import { BulletinBoardComponent } from './pages/bulletin-board/bulletin-board.co
 import { BulletinReportComponent } from './components/bulletin-report/bulletin-report.component';
 import { ViewReportComponent } from './pages/view-report/view-report.component';
 import { ReportListComponent } from './pages/report-list/report-list.component';
+import { ReportComponent } from './components/report/report.component';
+import { ViewExpedienteComponent } from './pages/view-expediente/view-expediente.component';
+import { BehaviorReportComponent } from './pages/behavior-report/behavior-report.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { ReportListComponent } from './pages/report-list/report-list.component';
     BulletinBoardComponent,
     BulletinReportComponent,
     ViewReportComponent,
-    ReportListComponent
+    ReportListComponent,
+    ReportComponent,
+    ViewExpedienteComponent,
+    BehaviorReportComponent
+    
   ],
   imports: [
     BrowserModule,

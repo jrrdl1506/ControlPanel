@@ -11,6 +11,10 @@ import { MedicalReportComponent } from './pages/medical-report/medical-report.co
 import { UserModifyComponent } from './pages/user-modify/user-modify.component';
 import { BulletinBoardComponent } from './pages/bulletin-board/bulletin-board.component';
 import { ViewReportComponent } from './pages/view-report/view-report.component';
+import { ReportListComponent } from './pages/report-list/report-list.component';
+import { ReportComponent } from './components/report/report.component';
+import { ViewExpedienteComponent } from './pages/view-expediente/view-expediente.component';
+import { BehaviorReportComponent } from './pages/behavior-report/behavior-report.component';
 
 
 const routes: Routes = [
@@ -24,7 +28,11 @@ const routes: Routes = [
   {path:'mdReport',component:MedicalReportComponent},
   {path:'editUser',component:UserModifyComponent},
   {path:'bulletinBoard',component:BulletinBoardComponent},
-  {path:'viewReport',component:ViewReportComponent}
+  {path:'viewReport',component:ViewReportComponent},
+  {path:'viewReport/:type?',component:ViewReportComponent},
+  {path:'reportList/:report',component:ReportListComponent},
+  {path:'viewExp',component:ViewExpedienteComponent},
+  {path:'behaviorReport',component:BehaviorReportComponent}
 
 ];
 
